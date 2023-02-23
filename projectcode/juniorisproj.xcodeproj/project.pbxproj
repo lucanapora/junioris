@@ -10,6 +10,7 @@
 		F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DA0F2E29A5BC3B0054AF24 /* main.cpp */; };
 		F3DA0F3729A5BEF10054AF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */; };
 		F3DA0F3929A5BFAC0054AF24 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */; };
+		F3DA0F3C29A8146E0054AF24 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DA0F3A29A8146E0054AF24 /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		F3DA0F2E29A5BC3B0054AF24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		F3DA0F3A29A8146E0054AF24 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		F3DA0F3B29A8146E0054AF24 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				F3DA0F2E29A5BC3B0054AF24 /* main.cpp */,
+				F3DA0F3A29A8146E0054AF24 /* shader.cpp */,
+				F3DA0F3B29A8146E0054AF24 /* shader.hpp */,
 			);
 			path = juniorisproj;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DA0F3C29A8146E0054AF24 /* shader.cpp in Sources */,
 				F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

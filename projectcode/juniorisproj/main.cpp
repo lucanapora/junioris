@@ -5,6 +5,9 @@
 //  Created by Luca Napora on 2/21/23.
 //
 
+//allows dynamic version of library
+#include <GL/glew.h>
+#define GLFW_DLL
 #include <GLFW/glfw3.h>
 
 int main(void)

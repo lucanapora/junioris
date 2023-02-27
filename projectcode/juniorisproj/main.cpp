@@ -4,7 +4,10 @@
 //
 //  Created by Luca Napora on 2/21/23.
 //
-
+//#ifdef __APPLE__
+//#include <OpenGL/gl3.h>
+//#include <OpenGL/gl3ext.h>
+//#endif
 //allows dynamic version of library
 #include <GL/glew.h>
 #define GLFW_DLL

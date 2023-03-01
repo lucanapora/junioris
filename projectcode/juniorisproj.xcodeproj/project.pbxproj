@@ -266,6 +266,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
+					/Users/lucanapora/Documents/junioris/projectcode/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,6 +288,7 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
+					/Users/lucanapora/Documents/junioris/projectcode/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

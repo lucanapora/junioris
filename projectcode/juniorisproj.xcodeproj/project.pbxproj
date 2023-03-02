@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F34F9E8E29B12BD500184FED /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */; };
+		F34F9E9029B1315900184FED /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = F34F9E8F29B1315900184FED /* glad.c */; };
 		F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DA0F2E29A5BC3B0054AF24 /* main.cpp */; };
-		F3DA0F3729A5BEF10054AF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */; };
 		F3DA0F3929A5BFAC0054AF24 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */; };
 		F3DA0F4029AD8F4E0054AF24 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3F29AD8F4E0054AF24 /* libGLEW.2.2.0.dylib */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F34F9E8F29B1315900184FED /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../Downloads/glad3.2/src/glad.c; sourceTree = "<group>"; };
 		F3DA0F2B29A5BC3B0054AF24 /* juniorisproj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juniorisproj; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DA0F2E29A5BC3B0054AF24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -40,7 +42,7 @@
 			files = (
 				F3DA0F4029AD8F4E0054AF24 /* libGLEW.2.2.0.dylib in Frameworks */,
 				F3DA0F3929A5BFAC0054AF24 /* libglfw.3.3.dylib in Frameworks */,
-				F3DA0F3729A5BEF10054AF24 /* OpenGL.framework in Frameworks */,
+				F34F9E8E29B12BD500184FED /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +69,7 @@
 		F3DA0F2D29A5BC3B0054AF24 /* juniorisproj */ = {
 			isa = PBXGroup;
 			children = (
+				F34F9E8F29B1315900184FED /* glad.c */,
 				F3DA0F2E29A5BC3B0054AF24 /* main.cpp */,
 			);
 			path = juniorisproj;
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */,
+				F34F9E9029B1315900184FED /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,14 +270,16 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
-					/Users/lucanapora/Documents/junioris/projectcode/include,
+					/Users/lucanapora/Downloads/glad/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.8/lib,
 					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
 				);
+				OTHER_CFLAGS = "-l/Users/lucanapora/Downloads/glad/include/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 			};
 			name = Debug;
 		};
@@ -288,14 +294,16 @@
 				HEADER_SEARCH_PATHS = (
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
-					/Users/lucanapora/Documents/junioris/projectcode/include,
+					/Users/lucanapora/Downloads/glad/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.8/lib,
 					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
 				);
+				OTHER_CFLAGS = "-l/Users/lucanapora/Downloads/glad/include/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 			};
 			name = Release;
 		};

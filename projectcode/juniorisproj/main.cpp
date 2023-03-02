@@ -9,10 +9,13 @@
 //#include <OpenGL/gl3ext.h>
 //#endif
 //allows dynamic version of library
-#include <GL/glew.h>
+
 #include <glad/glad.h>
-#define GLFW_DLL
+//#define GLFW_DLL
 #include <GLFW/glfw3.h>
+//#include <GL/glew.h>
+
+#include <iostream>
 
 int main(void)
 {

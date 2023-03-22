@@ -15,17 +15,24 @@ void processInput(GLFWwindow *window);
 
 const char *vertexShaderSource = "#version 330 core\n"
     "layout (location = 0) in vec3 aPos;\n"
+    "layout (location = 1) in vec3 aColor;\n"
+    "out vec3 ourColor;\n"
+
     "void main()\n"
     "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+    "   gl_Position = vec4(aPos, 1.0);\n"
+    "   ourColor = aColor;\n"
+   // "   vertexColor = vec4(0.5, 0.0, 0.0, 1.0); \n"
     "}\0";
 
 //fragment shader in glsl that defines the color of our vertices
 const char *fragmentShaderSource = "#version 330 core\n"
     "out vec4 FragColor;\n"
+   // "uniform vec4 ourColor;\n"
+    "in vec3 ourColor;\n"
     "void main()\n"
     "{\n"
-    "   FragColor = vec4(0.5f, 0.5f, 0.2f, 1.0f);\n"
+    "   FragColor = vec4(ourColor, 1.0);\n"
     "}\n\0";
 
 
@@ -61,11 +68,15 @@ int main()
         return -1;
     }
 
-    //defines 3d coordinates for the triangle (length, width, depth)
+    //defines 3d coordinates for the triangle (length, width, depth) and color values for each vertex
     float vertices[] {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f, 0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,      1.0f, 0.0f, 0.0f,
+        -0.5f, -0.5f, 0.0f,     0.0f, 1.0f, 0.0f,
+        0.0f, 0.5f, 0.0f,       0.0f, 0.0f, 1.0f
+        
+       // -0.125f, -0.125f, 0.0f,
+        //0.125f, -0.125f, 0.0f,
+        //0.0f, 0.0f, 0.0f,
     };
     
     //creates an opengl vertex buffer object - buffer that holds data about vertices for graphics card
@@ -137,8 +148,14 @@ int main()
     glDeleteShader(fragmentShader);
     
     //we still have to instruct gpu how to interpret the vertex data and link it with the shaders
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+    
+    //position attribute for vertex
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
+    
+    //color attribute for vertex
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6* sizeof(float), (void*)(3* sizeof(float)));
+    glEnableVertexAttribArray(1);
     
     
     
@@ -157,6 +174,15 @@ int main()
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
+        
+        //used for multiple triangles
+       // glUseProgram(shaderProgram);
+        //glBindVertexArray(VAO);
+        //glDrawArrays(GL_TRIANGLES, 0, 6);
+        
+        //sets color of uniform for triangle
+        int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
+        glUniform4f(vertexColorLocation, 0.5, 0.5, 0.0, 1.0);
         
         //swaps the color buffers
         glfwSwapBuffers(window);

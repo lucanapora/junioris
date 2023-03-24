@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F34F9E8E29B12BD500184FED /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */; };
 		F34F9E9029B1315900184FED /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = F34F9E8F29B1315900184FED /* glad.c */; };
-		F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3DA0F2E29A5BC3B0054AF24 /* main.cpp */; };
+		F34F9E9D29CE143500184FED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34F9E9C29CE143500184FED /* main.cpp */; };
 		F3DA0F3929A5BFAC0054AF24 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */; };
 		F3DA0F4029AD8F4E0054AF24 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA0F3F29AD8F4E0054AF24 /* libGLEW.2.2.0.dylib */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,10 @@
 
 /* Begin PBXFileReference section */
 		F34F9E8F29B1315900184FED /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../../Downloads/glad3.2/src/glad.c; sourceTree = "<group>"; };
+		F34F9E9829CE0C6B00184FED /* container.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpeg; sourceTree = "<group>"; };
+		F34F9E9C29CE143500184FED /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../.Trash/main.cpp; sourceTree = "<group>"; };
+		F34F9E9F29CE163300184FED /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = ../../stb_image.h; sourceTree = "<group>"; };
 		F3DA0F2B29A5BC3B0054AF24 /* juniorisproj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juniorisproj; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3DA0F2E29A5BC3B0054AF24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		F3DA0F3F29AD8F4E0054AF24 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../opt/homebrew/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
@@ -69,8 +71,10 @@
 		F3DA0F2D29A5BC3B0054AF24 /* juniorisproj */ = {
 			isa = PBXGroup;
 			children = (
+				F34F9E9F29CE163300184FED /* stb_image.h */,
+				F34F9E9C29CE143500184FED /* main.cpp */,
+				F34F9E9829CE0C6B00184FED /* container.jpeg */,
 				F34F9E8F29B1315900184FED /* glad.c */,
-				F3DA0F2E29A5BC3B0054AF24 /* main.cpp */,
 			);
 			path = juniorisproj;
 			sourceTree = "<group>";
@@ -142,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DA0F2F29A5BC3B0054AF24 /* main.cpp in Sources */,
 				F34F9E9029B1315900184FED /* glad.c in Sources */,
+				F34F9E9D29CE143500184FED /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

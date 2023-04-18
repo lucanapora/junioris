@@ -892,6 +892,7 @@
 		F34FA21629DDBAB900184FED /* type_aligned.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
 		F34FA21729DDBAB900184FED /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		F3D201DF29E5CEEA007584F6 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		F3D201E229EE1E2E007584F6 /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
 		F3DA0F2B29A5BC3B0054AF24 /* juniorisproj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juniorisproj; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DA0F3629A5BEF10054AF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F3DA0F3829A5BFAC0054AF24 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -1976,6 +1977,7 @@
 				F34F9EA729DDBAB700184FED /* glm */,
 				F34F9E9C29CE143500184FED /* main.cpp */,
 				F34F9E9829CE0C6B00184FED /* container.jpeg */,
+				F3D201E229EE1E2E007584F6 /* wood.jpeg */,
 				F34F9EA029CE1B4800184FED /* stb_image.h */,
 				F34F9E8F29B1315900184FED /* glad.c */,
 				F34F9EA129CE1B6200184FED /* stb_image.cpp */,

@@ -891,6 +891,7 @@
 		F34FA21529DDBAB900184FED /* projection.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = projection.inl; sourceTree = "<group>"; };
 		F34FA21629DDBAB900184FED /* type_aligned.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = type_aligned.hpp; sourceTree = "<group>"; };
 		F34FA21729DDBAB900184FED /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		F39BEBF929F6C76A00D458B5 /* makefile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = makefile.txt; sourceTree = SOURCE_ROOT; };
 		F3D201DF29E5CEEA007584F6 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		F3D201E229EE1E2E007584F6 /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
 		F3DA0F2B29A5BC3B0054AF24 /* juniorisproj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juniorisproj; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1974,6 +1975,7 @@
 		F3DA0F2D29A5BC3B0054AF24 /* juniorisproj */ = {
 			isa = PBXGroup;
 			children = (
+				F39BEBF929F6C76A00D458B5 /* makefile.txt */,
 				F34F9EA729DDBAB700184FED /* glm */,
 				F34F9E9C29CE143500184FED /* main.cpp */,
 				F34F9E9829CE0C6B00184FED /* container.jpeg */,
